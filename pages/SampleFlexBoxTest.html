@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CodePen -Demo Flexbox 3</title>
+        <style>
+            body {
+                padding: 2em;
+            }
+            .headerContainer{
+                display: flex;
+                flex-flow:column wrap ;
+                align-content: center;
+                background :tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .footerContainer {
+                display: flex;
+                flex-flow:column wrap ;
+                align-content: center;
+                background :limegreen ;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContainer{
+                display: flex;
+                flex-flow:row wrap ;
+                font-weight: bold;
+                text-align: center;
+            }
+            .mainContentItem {
+                text-align:left;
+                background: deepskyblue;
+            }
+            article{
+                padding: 10px;
+                margin: 10px;
+                background :aqua;
+            }
+            .sideBarLeftItem {
+                background: gold;
+            }
+            .sideBarRightItem {
+                background:hotpink;
+            }
+            .sideBarItem {
+                flex: 1 0 0;
+                border:0px solid green;
+            }
+            .mainContentItem{
+                flex: 3 0px;
+            }
+            .sideBarLeftItem{
+                order: 1;
+            }
+            .mainContentItem{
+                order: 2;
+            }
+            .sideBarRightItem{
+                order: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HEADER-Sample FlexBox Example</HEADER></h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First Article</h2>
+                    <p>This article discusses how our evolutionary instincts clash with the modern world and what this means for anxiety, stress, and worry. I'm proud of this one because of how I was able to blend science, practical application, and fun hand-drawn images. My best articles tend to be ones that are educational, entertaining, and useful</p>
+                </article>
+                <article>
+                    <h2>Second Article</h2>
+                    <p>The power of the environment is one of my favorite themes when it comes to discussing our habits and behavior. This article examines how environment has shaped the course of humanity over the centuries and then dives into the practical application of these ideas for our modern world.</p>
+                </article>
+                <article>
+                    <h2>Third Article</h2> 
+                    <p>This article shares the story of the famous author, Victor Hugo, and the totally-strange-but-somehow-effective strategy he used to overcome his chronic procrastination. Throughout the post, I weave in some interesting scientific insights about why we procrastinate and what we can do about it.</p> 
+                </article> 
+            </section>
+          
+            <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side bar</p></div></sideBar>
+            <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer"> Footer </footer>
+    </body>
+    
+</html>
